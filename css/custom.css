@@ -1127,9 +1127,19 @@ transform: translate3d(5px,0,0);
    }
 @media (max-width: 768px){
     .services .wrapper {
-        border-top: 1px solid #fff;
         display: block;
         width: 100%;
         margin: 0 auto;
     }
+   .service .servicedesc {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 100px;
+    -webkit-transition: all .4s cubic-bezier(.68,-.55,.265,1.55);
+    transition: all .4s cubic-bezier(.68,-.55,.265,1.55);
+        transition-delay: 0s;
+    color: #989ba5;
+    opacity: 1;
+
+}
 }
