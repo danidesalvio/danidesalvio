@@ -1,0 +1,71 @@
+.prmry-color {
+    color: #99acae !important;
+}
+
+.bg-prmry {
+    background-color: #99acae !important;
+}
+
+.border-color-prmry {
+    border-color: #1c2329 !important;
+}
+
+.after-color-prmry:after {
+    color: #1c2329 !important;
+}
+
+.after-bg-prmry:after {
+    background-color: #1c2329 !important;
+}
+
+.before-color-prmry:before {
+    color: #1c2329 !important;
+}
+
+.before-bg-prmry:before {
+    background-color: #1c2329 !important;
+}
+
+svg.fill-prmry {
+    fill: #8fa8a8 !important;
+}
+
+svg.stroke-prmry {
+    stroke: #8fa8a8 !important;
+}
+
+svg.path-fill-prmry path {
+    fill: #8fa8a8 !important;
+}
+
+svg.path-stroke-prmry path {
+    stroke: #8fa8a8 !important;
+}
+
+svg.rect-fill-prmry rect {
+    fill: #8fa8a8 !important;
+}
+
+svg.rect-stroke-prmry rect {
+    stroke: #8fa8a8 !important;
+}
+
+svg.g-fill-prmry g {
+    fill: #8fa8a8 !important;
+}
+
+svg.g-stroke-prmry g {
+    stroke: #8fa8a8 !important;
+}
+
+.hover-color-prmry:hover {
+    color: #8fa8a8 !important;
+}
+
+.hover-bg-prmry:hover {
+    background-color: #8fa8a8 !important;
+}
+
+.hover-border-prmry:hover {
+    border-color: #8fa8a8 !important;
+}
