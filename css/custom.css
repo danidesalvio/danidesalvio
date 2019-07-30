@@ -987,3 +987,36 @@ transform: translate3d(5px,0,0);
         border-radius: 0;
         padding: 60px;
     }
+
+#premium-navigation {
+    background-color: rgb(28, 35, 41);
+    position: relative;
+    z-index: 11;
+    width: 100%;
+}
+#premium-navigation .navbar-nav > li:last-child > a {
+    padding: 10px 16px;
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+#premium-navigation .navbar-nav > li:last-child > a:hover {
+    padding: 10px 16px;
+    border: 0px solid #99acae;
+    background-color: #99acae;
+    color: #fff !important;
+}
+.btn-outline.outline-dark, .icon.outline-dark {
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #141b20;
+    color: #141b20;
+}
+.btn-outline.outline-dark:hover, .icon.outline-dark:hover {
+    background: #141b20;
+    color: #ffffff;
+}
+btn.btn-primary {
+    background: #687f82;
+}
+.btn.btn-primary:hover {
+    background: #141b20;
+}
