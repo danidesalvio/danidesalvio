@@ -1014,7 +1014,7 @@ transform: translate3d(5px,0,0);
     background: #141b20;
     color: #ffffff;
 }
-btn.btn-primary {
+.btn.btn-primary {
     background: #99acae;
 }
 .btn.btn-primary:hover {
