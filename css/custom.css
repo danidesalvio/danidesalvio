@@ -1028,8 +1028,6 @@ transform: translate3d(5px,0,0);
 }
 
 .services .wrapper {
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
@@ -1038,9 +1036,7 @@ transform: translate3d(5px,0,0);
 
 .service {
     text-align:center;
-    border-right:1px solid #ebe9e8;
-    border-bottom:1px solid #ebe9e8;
-    background-color:#1c2329;
+    background-color:#13191e;
     cursor:pointer;
     -webkit-transition:all .4s cubic-bezier(.68,-.55,.265,1.55);
     transition:all .4s cubic-bezier(.68,-.55,.265,1.55)
@@ -1076,7 +1072,7 @@ transform: translate3d(5px,0,0);
     transition-delay:.1s
    }
    .service:hover {
-    background-color:#1d1e21
+    background-color:#13191e;
    }
    .service:hover .nc-icon.outline * {
     stroke:#fff!important;
@@ -1132,7 +1128,6 @@ transform: translate3d(5px,0,0);
 @media (max-width: 768px){
     .services .wrapper {
         border-top: 1px solid #fff;
-        border-left: 0px solid #fff;
         display: block;
         width: 100%;
         margin: 0 auto;
