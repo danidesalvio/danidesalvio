@@ -1143,3 +1143,10 @@ transform: translate3d(5px,0,0);
 
 }
 }
+
+/*Mobile*/
+@media (max-width: 480px) {
+#premium-2 .header-content {
+    height: 380px;
+ }
+}
