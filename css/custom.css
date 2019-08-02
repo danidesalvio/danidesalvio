@@ -1,13 +1,10 @@
-#site-registration-bar {display: none;}
-#seo-anchor {display: none;}
-
 body {
     overflow-x: hidden;
 }
+
 h1, h2 {
 font-family: 'Roboto', sans-serif;
 }
-
 
 #header-1n .main-nav, #header-1n.h1bar .main-nav {
 background-color: #e4e4e4;
@@ -26,6 +23,7 @@ background-color: #e4e4e4;
 
 /*interior video*/
 #premium-3.interior-video {height: calc(40vh - 140px); min-height: 400px;}
+
 .nav > li > a:focus, .nav > li > a:hover {background-color: transparent;}
 
 /*portfolio*/
