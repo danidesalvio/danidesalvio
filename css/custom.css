@@ -1262,9 +1262,11 @@ transform: translate3d(5px,0,0);
  -o-transition:all 300ms ease-out;
  transition:all 300ms ease-out;
  padding:10px;
- border:8px solid #fff
+ border:8px solid #1c2329;
 }
-
+.bk-offices-area .img-overlay {
+   border: 8px solid #1c2329;
+}
 .bk-offices-area .office .item-hover:hover .mask {
  opacity:0.85;
 }
