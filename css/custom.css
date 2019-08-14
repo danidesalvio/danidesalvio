@@ -1253,7 +1253,7 @@ transform: translate3d(5px,0,0);
  top:0;
  left:0;
  background-color:#000;
- opacity:0.3;
+ opacity:0.5;
  width:100%;
  height:100%;
  z-index:3;
@@ -1264,11 +1264,9 @@ transform: translate3d(5px,0,0);
  padding:10px;
  border:8px solid #fff
 }
-.bk-offices-area .img-overlay {
- border:8px solid #fff
-}
+
 .bk-offices-area .office .item-hover:hover .mask {
- opacity:0
+ opacity:0.85;
 }
 .bk-offices-area .office h3 {
  font-family:'Open Sans',sans-serif;
