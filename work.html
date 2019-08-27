@@ -54,6 +54,17 @@
             width: 24px;
             z-index: 999;
         }
+        #premium-3 .premium-3-content {
+            position: absolute;
+            z-index: 3;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            animation: 1000ms ease 0s normal none fadeInRight;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
         
         .content-7n.premium .tile-grid {
             height: 90vh;
@@ -88,7 +99,7 @@
 <body>
 
     <div id="page">
-        <header id="premium-navigation" style="background-color: rgb(28, 35, 41); outline: none; cursor: inherit;" data-selector="#premium-navigation">
+        <header id="premium-navigation" style="position:absolute; background: transparent;" data-selector="#premium-navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-selector="a.btn, button.btn, button" style="outline: none; cursor: inherit;">
@@ -115,9 +126,10 @@
         
     </header>
 
-    <section id="premium-3" style="height: 60vh;" data-selector="section, .section">
+    <section id="premium-3" style="height: 60vh; background-image: url(&quot;images/tokachi_sm.jpg&quot;); background-position: center bottom; background-size: cover; background-attachment: fixed;" data-selector="section, .section">
+        <div class="gradient" style="background-image: linear-gradient(180deg,rgba(250,183,129,0) 0,#1c2329 100%); position:absolute; width: 100%; height: 100vh; bottom: 0;"></div>
         <div class="premium-3-content">
-            <h1 class="margin-bottom-40 editContent" style="outline: none; cursor: inherit;" data-selector="h1, h2, h3, h4, h5, h6">Design &amp; Deliver</h1>
+            <h1 class="margin-bottom-40 editContent" style="outline: none; cursor: inherit;" data-selector="h1, h2, h3, h4, h5, h6">Design &amp; Develop</h1>
         </div>
         
         <!--<div class="fullscreen-bg hidden-sm hidden-xs">
@@ -125,7 +137,6 @@
                 <source src="https://br360css.blueroof360.com/video/br360-home.mp4" type="video/mp4">
             </video>
         </div>-->
-        <div class="img-overlay" style="background-image: url(&quot;images/tokachi_sm.jpg&quot;);" data-selector=".img-overlay"></div>
     </section>
 
 
