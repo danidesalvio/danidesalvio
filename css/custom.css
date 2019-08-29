@@ -1150,6 +1150,9 @@ transform: translate3d(5px,0,0);
 .content-22n .project .hover-state {opacity: 1;}
 .content-22n .project .hover-state .align-vertical {opacity: 1;}
 }
+#premium-navigation .navbar-nav > li > a:hover, #premium-navigation .navbar-nav > li > a:focus {
+  color: #99acae;
+}
 
 /*Mobile*/
 @media (max-width: 480px) {
