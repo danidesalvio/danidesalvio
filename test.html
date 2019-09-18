@@ -356,12 +356,389 @@
     width: 100%;
 }
 }
+        
+        /*Menu*/
+.hs-menu {
+ position:fixed;
+ z-index:100;
+ color:#f8f8f8;
+ background:none;
+ width:0px;
+ right:0;
+ top:0;
+ /*height:100%;*/
+ min-height:40px;
+ padding:85px 0px 0;
+}
+.hs-menu img {
+ animation-delay:100ms
+}
+.hs-menu nav a {
+ display:flex;
+ align-items:center;
+ color:#aaa !important;
+ padding:10px 20px;
+ outline:none;
+ font-size:18px
+}
+.hs-menu nav a:hover {
+ color:#fff !important
+}
+.hs-menu nav a:active {
+ box-shadow:7px 0 17px #000 inset
+}
+.top-nav .navbar-brand {
+ height:120px;
+ padding:0;
+ max-width:300px
+}
+.new-nav {
+ position:absolute;
+ top:20px;
+ right:5%;
+ z-index:10000;
+}
+.new-nav .showClose {
+ position:fixed !important;
+ right:5% 
+}
+.circle {
+ position:absolute;
+ background:transparent;
+ line-height:1.3;
+ width:50px;
+ height:50px;
+ border-radius:50%;
+ cursor:pointer;
+ right:15px;
+}
+.circle::after,
+.circle::before {
+ content:"";
+ display:block;
+ top:50%;
+ right:14px;
+ height:3px;
+ width:34px;
+ position:absolute;
+ background:#fff;
+ -webkit-transition:all .3s;
+ transition:all .3s;
+ transform:translateY(-50%) translateX(0) rotate(-45deg);
+ opacity:0;
+ visibility:hidden
+}
+.circle::after {
+ transform:translateY(-50%) translateX(0) rotate(45deg)
+}
+.circle.showClose:after,
+.circle.showClose:before {
+ opacity:1;
+ visibility:visible 
+}
+.menu {
+ width:50px
+}
+.line1 {
+ height:3px;
+ width:40px;
+ margin-bottom:5px;
+ background:#fff;
+ transition:300ms ease all;
+ transform-origin:left 
+}
+.line2 {
+ height:3px;
+ width:28px;
+ margin-bottom:5px;
+ background:#fff;
+ transition:300ms ease all;
+ transform-origin:left 
+}
+.line3 {
+ height:3px;
+ width:18px;
+ margin-bottom:5px;
+ background:#fff;
+ transition:300ms ease all;
+ transform-origin:left 
+}
+.menu:hover .line1 {
+ width:18px 
+}
+.menu:hover .line2 {
+ width:28px 
+}
+.menu:hover .line3 {
+ width:40px 
+}
+#menu-in {
+ position:fixed;
+ top:0;
+ left:-100%;
+ width:100%;
+ height:100%;
+ background:linear-gradient(135deg,rgba(20,20,20,1),rgba(50,50,50,1));
+ z-index:98;
+ transition:all 300ms ease
+}
+#menu-in.slideIn {
+ left:0
+}
+@media(max-width:767px) {
+ .navbar-nav .open .dropdown-menu .dropdown-header,
+ .navbar-nav .open .dropdown-menu > li > a {
+  padding:12px 70px 2px 31px !important
+ }
+}
+@media (max-width:650px) {
+ .new-nav {
+  top:82px
+ }
+ .render-menu > ul {
+  width:100% !important
+ }
+ .info-blocks {
+  width:100% !important;
+  transform:translate(0,10%) !important;
+  position:relative !important
+ }
+ #menu-in .dropdown-menu a {
+  padding:10px 70px 0 0 !important
+ }
+ .info-blocks {
+  padding-top:0 !important
+ }
+}
+.info-blocks {
+ float:left !important;
+ padding-top:100px;
+ width:95% !important;
+ text-align:right;
+ position:absolute
+}
+.relative-wrapper {
+ position:relative;
+ width:100%;
+ height:100%
+}
+.render-menu > ul {
+ display:flex;
+ justify-content:center;
+ flex-direction:column;
+ align-items:center;
+ z-index:100;
+ float:none !important
+}
+.navbar-nav > li > a {
+ padding:15px 20px;
+ font-size:16px;
+ font-weight:700;
+ line-height:18px
+}
+.render-menu ul > li > .dropdown-menu > li {
+ margin-left:0 !important;
+ text-align:right !important
+}
+.render-menu ul > li > .dropdown-menu > li > a {
+ font-size:16px;
+ padding:10px 0 0
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+ background-color:transparent
+}
+#menu-in {
+ text-align:right !important
+}
+#menu-in ul li .dropdown-menu {
+ background-color:transparent;
+ position:relative;
+ font-family:'Roboto',sans-serif
+}
+#menu-in .dropdown-menu {
+ top:0;
+ left:0
+}
+.navbar-nav > li > .dropdown-menu {
+ margin-top:0
+}
+@media (max-width:480px) {
+ #menu-in .logo {
+  top:70px
+ }
+ #menu-in .logo img {
+  max-height:60px
+ }
+ .new-nav {
+  top:80px
+ }
+ .top-nav .navbar-brand {
+height: 120px;
+padding: 0;
+max-width: 300px;
+ }
+.render-menu > ul > li > a {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 14px 20px;
+}
+ .render-menu ul > li > .dropdown-menu > li > a {
+  font-size:16px
+ }
+ .circle {
+  top:80px;
+  right: 0px;
+ }
+ #menu-in .dropdown-menu a {
+  padding:0 70px 0 0 !important
+ }
+ .new-nav .showClose {
+  top:90px
+ }
+}
+
+#menu-in .fa {
+ color:#fff !important;
+ padding:10px 15px
+}
+#menu-in .fa:hover {
+ color:#f0ad1e !important
+}
+#menu-in .tile-grid {
+ padding:0;
+ position:relative;
+ color:#fff
+}
+#menu-in .tile-grid:last-child {
+ background-color:#0c0e3c
+}
+#menu-in .tile-grid .tile-grid-content {
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ height:100%;
+ position:relative;
+ bottom:unset;
+ z-index:3;
+ padding:40% 0;
+ max-width:600px;
+ margin:0 auto;
+ text-align:center;
+ min-height:400px;
+ height:100vh
+}
+#menu-in .tile-grid .img-overlay {
+ opacity:.1
+}
+.nav-item {
+ font-size:18px;
+ font-family:Roboto;
+ text-transform:uppercase;
+ letter-spacing:2px
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+ background-color:transparent
+}
+#menu-in .tile-grid:first-child {
+ background:linear-gradient(330deg,#0c0e3c,#0c0e3c 60%,#c59d5f)
+}
+@media (max-width:991px) {
+ #menu-in .relative-wrapper .tile-grid:first-child {
+  display:none
+ }
+}
+@media (max-width:992px) {
+ .hs-menu {
+  z-index:100;
+  color:#f8f8f8;
+  background:transparent;
+  width:80px;
+  right:0;
+  top:0;
+  /*height:100%;*/
+  min-height:40px
+ }
+}
         </style>
 </head>
 
 <body>
 
     <div id="page">
+        
+    
+        <!-- Content Section 1 -->
+    	<section id="homepage" class="top-nav" data-selector="section, .section">
+            <div class="container">
+                <div class="flex ai-center" style="justify-content: space-between;">
+                    <div class="logo">
+                        <a class="navbar-brand" href="/">
+                            <img class="img-responsive site_custom_logo_dynamic" src="https://cdn1.brivityidx.com/assets/images/uploads/3904/NAVYLARGE1_White_Text.png" alt="Realvolution" style="max-width: 300px; outline: currentcolor none medium; cursor: inherit;" data-selector="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Site Side Navigation -->
+        <div style="height: 100px; width: 100%; background-color: #000;" class="builder-nav-helper"></div>    
+            <aside class="hs-menu" id="hs-menu">
+                <div class="circle flex ai-center jc-center">
+                    <div class="close-menu"></div>
+                        <div class="menu">
+                            <div class="line1">
+                                
+                            </div>
+                            <div class="line2">
+                                
+                            </div>
+                            <div class="line3">
+                                
+                            </div>
+                        </div>
+                </div>
+            </aside>
+            
+            <section id="menu-in" class="menu-in-navigation navigation" style="outline: currentcolor none medium; cursor: inherit;" data-selector="section, .section">
+            <div class="relative-wrapper">
+                <div class="row" style="margin: 0;">
+                    <div class="col-md-6 tile-grid" style="background-color: rgb(28, 35, 41); outline: currentcolor none medium; cursor: inherit;" data-selector=".tile-grid">
+                        <div class="tile-grid-content">
+                            <a class="navbar-brand" href="/" style="margin: 0 auto;">
+                                <img class="img-responsive site_custom_logo_dynamic" src="https://cdn1.brivityidx.com/assets/images/uploads/3904/NAVYLARGE1_White_Text.png" alt="Realvolution" style="max-width: 300px; outline: currentcolor none medium; cursor: inherit;" data-selector="img">
+                             </a>
+                            <h2 style="outline: currentcolor none medium; cursor: inherit;" data-selector="h1, h2, h3, h4, h5, h6"></h2>
+                            <h4 style="outline: currentcolor none medium; cursor: inherit;" data-selector="h1, h2, h3, h4, h5, h6"></h4>
+                            
+                        </div>
+                        <div class="img-overlay" style="background-image: url(&quot;http://sitebuilder.realvolution.com/elements/images/uploads/3904/brooklyn-782831-unsplash.jpg&quot;); outline: currentcolor none medium; cursor: inherit;" data-selector=".img-overlay"></div>
+                    </div>
+                    <div class="col-md-6 tile-grid" style="outline: currentcolor none medium; cursor: inherit;" data-selector=".tile-grid">
+                        <div class="tile-grid-content">
+                            <div class="render-menu">
+                                <ul class="nav">
+                                    <li class="nav-item" style="outline: currentcolor none medium; cursor: inherit;" data-selector="li">
+                                        <a class="nav-link-color" href="">Menu 1</a>
+                                    </li>
+                                    <li class="nav-item" style="outline: currentcolor none medium; cursor: inherit;" data-selector="li">
+                                        <a class="nav-link-color" href="">Menu 2</a>
+                                    </li>
+                                    <li class="nav-item" style="outline: currentcolor none medium; cursor: inherit;" data-selector="li">
+                                        <a class="nav-link-color" href="">Menu 3</a>
+                                    </li>
+                                    <li class="nav-item" style="outline: currentcolor none medium; cursor: inherit;" data-selector="li">
+                                        <a class="nav-link-color" href="">Menu 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="img-overlay" style="outline: currentcolor none medium; cursor: inherit;" data-selector=".img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
         <header id="premium-navigation" style="position:absolute; background: transparent;" data-selector="#premium-navigation">
             <div class="container">
                 <div class="navbar-header">
